@@ -1,0 +1,5 @@
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/CMakeFiles/devcontainer-stm32-cubemx-clean.dir
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,20 @@
+CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Core/Src/sysmem.c.obj: \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/Core/Src/sysmem.c \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/errno.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/errno.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/reent.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/_ansi.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/newlib.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/_newlib_version.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/config.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/machine/ieeefp.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/features.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include/stddef.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/_types.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/machine/_types.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/machine/_default_types.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/lock.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include/stdint.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/stdint.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/_intsup.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/_stdint.h

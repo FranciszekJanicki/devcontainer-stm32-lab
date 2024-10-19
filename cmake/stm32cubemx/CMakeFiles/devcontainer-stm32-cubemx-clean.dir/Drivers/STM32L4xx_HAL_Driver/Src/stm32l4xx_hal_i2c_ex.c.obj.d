@@ -1,0 +1,36 @@
+CMakeFiles/devcontainer-stm32-cubemx-clean.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj: \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Core/Inc/stm32l4xx_hal_conf.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include/stdint.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/stdint.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/machine/_default_types.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/features.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/_newlib_version.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/_intsup.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/_stdint.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/CMSIS/Include/cmsis_version.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/CMSIS/Include/cmsis_compiler.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/CMSIS/Include/cmsis_gcc.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/CMSIS/Include/mpu_armv7.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h \
+ /home/franek/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include/stddef.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
+ /home/franek/Documents/STM32/devcontainer-stm32-cubemx-clean/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h

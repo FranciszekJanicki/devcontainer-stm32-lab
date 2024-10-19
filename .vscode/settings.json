@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "cstring": "cpp",
+        "cstdint": "cpp",
+        "bit": "cpp",
+        "cstdlib": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
