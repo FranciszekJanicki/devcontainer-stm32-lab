@@ -62,39 +62,38 @@ const int timeout = 5;
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-// std::uint8_t buffer[1];
+std::uint8_t buffer[1];
 
-// void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
-// {
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
+{
+    if (huart->Instance == USART2) {
+        switch (std::atoi((const char*)buffer)) {
+            case 1:
+                HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_SET);
+                HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
 
-//     if (huart->Instance == USART2) {
-//           switch (std::atoi((const char*)buffer)) {
-// case 1:
-//     HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_SET);
-//     HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
-//     HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
+            case 2:
+                HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_SET);
+                HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
 
-// case 2:
-//     HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
-//     HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_SET);
-//     HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
+            case 3:
+                HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_SET);
 
-// case 3:
-//     HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
-//     HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
-//     HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_SET);
+            default:
+                HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
+        }
 
-// default:
-//     HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
-//     HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
-//     HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
-//     }
-
-//         if (HAL_UART_Receive_IT(&huart2, buffer, sizeof(buffer)) != HAL_OK) {
-//             Error_Handler();
-//         }
-//     }
-// }
+        if (HAL_UART_Receive_IT(&huart2, buffer, sizeof(buffer)) != HAL_OK) {
+            Error_Handler();
+        }
+    }
+}
 /* USER CODE END 0 */
 
 /**
