@@ -66,20 +66,29 @@ const int timeout = 5;
 
 // void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
 // {
-//     static const std::uint16_t bit_masks[] = {
-//         LD1_Pin,
-//         LD2_Pin,
-//         LD3_Pin,
-//     };
 
 //     if (huart->Instance == USART2) {
-//         for (std::uint8_t i = 0; i < sizeof(bit_masks) / sizeof(*bit_masks); ++i) {
-//             if (bit_masks[i] == *buffer) {
-//                 HAL_GPIO_WritePin(GPIOA, bit_masks[i], GPIO_PIN_SET);
-//             } else {
-//                 HAL_GPIO_WritePin(GPIOA, bit_masks[i], GPIO_PIN_RESET);
-//             }
-//         }
+//           switch (std::atoi((const char*)buffer)) {
+// case 1:
+//     HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_SET);
+//     HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
+//     HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
+
+// case 2:
+//     HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
+//     HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_SET);
+//     HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
+
+// case 3:
+//     HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
+//     HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
+//     HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_SET);
+
+// default:
+//     HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
+//     HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
+//     HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
+//     }
 
 //         if (HAL_UART_Receive_IT(&huart2, buffer, sizeof(buffer)) != HAL_OK) {
 //             Error_Handler();
@@ -123,12 +132,6 @@ int main(void)
 
     HAL_UART_Receive_IT(&huart2, buffer, sizeof(buffer));
 
-    const std::uint16_t bit_masks[] = {
-        LD1_Pin,
-        LD2_Pin,
-        LD3_Pin,
-    };
-
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -142,12 +145,26 @@ int main(void)
             Error_Handler();
         }
 
-        for (std::uint8_t i = 0; i < sizeof(bit_masks) / sizeof(*bit_masks); ++i) {
-            if (bit_masks[i] == *buffer - 48) {
-                HAL_GPIO_WritePin(GPIOA, bit_masks[i], GPIO_PIN_SET);
-            } else {
-                HAL_GPIO_WritePin(GPIOA, bit_masks[i], GPIO_PIN_RESET);
-            }
+        switch (std::atoi((const char*)buffer)) {
+            case 1:
+                HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_SET);
+                HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
+
+            case 2:
+                HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_SET);
+                HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
+
+            case 3:
+                HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_SET);
+
+            default:
+                HAL_GPIO_WritePin(GPIOA, LD1_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD2_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(GPIOA, LD3_Pin, GPIO_PIN_RESET);
         }
     }
 }
